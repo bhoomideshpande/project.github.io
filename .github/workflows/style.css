@@ -1,0 +1,199 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #111;
+    color: #fff;
+}
+
+/* Navigation Styles */
+header {
+    background-color: rgba(20, 20, 20, 0.9);
+    color: white;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Main Section Styles */
+main {
+    margin-top: 80px;
+    padding: 50px;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(20, 20, 20, 1) 0%, rgba(30, 30, 30, 1) 100%);
+}
+
+/* Sections */
+section {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    padding: 40px;
+    background-color: rgba(25, 25, 25, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.content .highlight {
+    color: #ff6f61;
+}
+
+.content p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #b0b0b0;
+}
+
+/* Course Introduction Section */
+#course-intro {
+    background-color: rgba(35, 35, 35, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#course-intro h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+#course-intro h2 {
+    font-size: 2rem;
+    color: #89c4f4;
+}
+
+#course-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* City Introduction Section */
+#city-intro {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#city-intro h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+#city-intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #b0b0b0;
+}
+
+/* Team Details Section */
+#team-details {
+    background-color: rgba(40, 40, 40, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    background-color: rgba(50, 50, 50, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 220px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-member h2 {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.team-member p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Hover effect for team members */
+.team-member:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    background-color: rgba(60, 60, 60, 0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
