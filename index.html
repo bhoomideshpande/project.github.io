@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chikmanglur Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f5f5f5;
+            padding: 8px 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #4caf50;
+            color: #121212;
+        }
+
+        section {
+            padding: 40px 20px;
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        h1 {
+            color: #4caf50;
+        }
+
+        .highlight {
+            color: #4caf50;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        th, td {
+            border: 2px solid #4CAF50;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #2a2a2a;
+        }
+
+        tr:hover {
+            background-color: #333333;
+        }
+
+        td:first-child {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showSection('home')">Home</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('course-intro')">Course Introduction</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('city-intro')">City Introduction</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('team-details')">Team Details</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('agriculture')">Agriculture</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="active">
+            <div class="content">
+                <h1>Welcome to <span class="highlight">Chikmanglur</span></h1>
+                <p>Our project focuses on developing innovative solutions that merge advanced technology with sustainable practices.</p>
+            </div>
+        </section>
+
+        <!-- Course Introduction Section -->
+        <section id="course-intro">
+            <h1>Design Analysis and <span class="highlight">Algorithm</span></h1>
+            <h2>About the Course</h2>
+            <p>This course forms the backbone of computer science and computational problem-solving. Algorithms are key to developing efficient and reliable solutions across various domains.</p>
+        </section>
+
+        <!-- City Introduction Section -->
+        <section id="city-intro">
+            <h1>City Introduction</h1>
+            <p>Our team has taken the lead in developing a 1500 square kilometer smart city named Chikmanglur which is located on the foothills of the Mullayangiri peak of the Western Ghats with a total population of 1.13 million. With a budget of 6400 crore, we plan to build a city that incorporates digital technologies and data-driven strategies to enhance urban life, optimize resource use, and improve services across infrastructure, transportation, energy, and governance.</p>
+        </section>
+
+        <!-- Team Details Section -->
+        <section id="team-details">
+            <h1>Team Details</h1>
+            <div class="team-container">
+                <div class="team-member">
+                    <h2>Rakshita Kulkarni</h2>
+                    <p><strong>Roll Number:</strong> 422</p>
+                    <p><strong>USN:</strong> 01FE23BCS155</p>
+                    <a href="https://rakshita123456.github.io/topic.github.io/" target="_blank" class="button">View Profile</a>
+                </div>
+                <div class="team-member">
+                    <h2>Spoorthi Hiremath</h2>
+                    <p><strong>Roll Number:</strong> 439</p>
+                    <p><strong>USN:</strong> 01FE23BCS251</p>
+                    <a href="https://spoorthi-max.github.io/spooportfolio.github.io/" target="_blank" class="button">View Profile</a>
+                </div>
+                <div class="team-member">
+                    <h2>Maitri Patil</h2>
+                    <p><strong>Roll Number:</strong> 404</p>
+                    <p><strong>USN:</strong> 01FE23BCS048</p>
+                    <a href="https://Maitripatil1407.github.io/" target="_blank" class="button">View Profile</a>
+                </div>
+                <div class="team-member">
+                    <h2>Bhoomi Deshpande</h2>
+                    <p><strong>Roll Number:</strong> 420</p>
+                    <p><strong>USN:</strong> 01FE23BCS145</p>
+                    <a href="https://bhoomideshpande.github.io/portfolio.github.io/" target="_blank" class="button">View Profile</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agriculture Section -->
+        <section id="agriculture">
+            <h1>Optimizing Agriculture with Renewable Energy</h1>
+            <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Functionality Identified</th>
+                    <th>Description</th>
+                    <th>Owner</th>
+                    <th>Portable Tools</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Farm data management</td>
+                    <td>Manage farm details such as soil quality, crop type, and yield history.</td>
+                    <td>Rakshita Kulkarni</td>
+                    <td>Hash tables</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Solar-powered irrigation scheduling</td>
+                    <td>Optimize water usage by storing schedule data</td>
+                    <td>Maitri</td>
+                    <td>Queues</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Supply chain tracking</td>
+                    <td>Track the movement of harvested crops from farm to market efficiently</td>
+                    <td>Spoorthi</td>
+                    <td>Graphs and linked lists</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Microgrid for rural farms</td>
+                    <td>Build localized renewable energy grids for farms, ensuring minimal dependency on traditional power sources</td>
+                    <td>Bhoomi Deshpande</td>
+                    <td>Minimum spanning tree (MST), DFS/BFS, Arrays, and stacks</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Energy generation tracking</td>
+                    <td>Monitor and track the energy generated by solar panels, wind turbines, and other sources</td>
+                    <td>Maitri</td>
+                    <td>Arrays and linked lists</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Farmer marketplace</td>
+                    <td>Enable farmers to sell directly, maintaining the list of products and their details</td>
+                    <td>Rakshita Kulkarni</td>
+                    <td>Arrays and stacks</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script>
+        // Function to show the selected section and hide others
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
